@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>LoL Challenge</title>
+	<script type="text/javascript" src="game.js"></script>
+	<link rel="stylesheet" href="game.css" />
+</head>
+
+<body>
+    <div style="text-align:center;margin-top:3%">
+        <p>
+<!--		<a href="javascript:setGame('countries');">194 Countries</a> | -->
+		</p>
+
+		<p id="description">Name all 121 League of Legends champions in 10 minutes</p>
+
+		<div style="font-size:36px; font-weight:bold;" id="timer">0:00</div>
+
+		<div style="text-align:center;" id="num_left"></div>
+
+		<div style="text-align:center;">
+		<input onkeyup="check_input()" type="text" id="text_input" /><br /><br />
+		<div id="score" style="display:none">Score : 0 - </div><a href="javascript:setGame('champions');" id="starter" >Click to start the game !</a> <br /><br />
+		</div>
+        
+        <div id="so_far"></div>
+        
+        <p style="color:#00f;" id="remaining"></p>
+    </div>
+	<div>
+		<div class="table-title"><h3>Best scores</h3></div>
+		<table class="table-fill" id="highscores">
+			<thead>
+				<tr>
+				<th class="text-center">Score</th><th class="text-center">Time Left</th>
+				</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>0</td><td>0:00</td>
+			</tr>
+			<tr>
+				<td>0</td><td>0:00</td>
+			</tr>
+			<tr>
+				<td>0</td><td>0:00</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
